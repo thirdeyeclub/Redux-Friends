@@ -22,14 +22,14 @@ class Form extends React.Component{
     render(){
         return(
           <form>
-              <h1>Add Buddy</h1>
-                xxxxxxxxxxxx
+              <h1>Create Friend</h1>
+                /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\|
                 <input name="name" type="text" onChange={this.changeHandle}  placeholder="Name..." value={this.state.friend.name}/>
                 <input name="age" type="text" onChange={this.changeHandle} placeholder="How old?"  value={this.state.friend.age}/>
                 <input name="email" type="text" onChange={this.changeHandle} placeholder="Email..."  value={this.state.friend.email}/>
-                <button onClick={e => this.props.addBuddy(e,this.state.friend)}>
-                    Add Buddy</button>
-                xxxxxxxxxxxx
+                |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                <br/>
+                <button onClick={e => this.props.addBuddy(e,this.state.friend)}>Add Buddy</button>
           </form>
       )
   }
